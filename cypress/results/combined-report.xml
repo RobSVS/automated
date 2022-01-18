@@ -1,40 +1,40 @@
 <?xml version="1.0"?>
 <testsuites failures="0" errors="0" tests="25">
-  <testsuite name="Root Suite" timestamp="2022-01-18T14:08:57" tests="0" file="cypress/integration/testing/aliasing.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Aliasing" timestamp="2022-01-18T14:08:57" tests="2" time="2.6570" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-18T14:48:54" tests="0" file="cypress/integration/testing/aliasing.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Aliasing" timestamp="2022-01-18T14:48:54" tests="2" time="2.6220" failures="0">
     <testcase name="Aliasing .as() - alias a DOM element for later use" time="0.8260" classname=".as() - alias a DOM element for later use"/>
-    <testcase name="Aliasing .as() - alias a route for later use" time="0.8560" classname=".as() - alias a route for later use"/>
+    <testcase name="Aliasing .as() - alias a route for later use" time="0.9510" classname=".as() - alias a route for later use"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-18T14:08:39" tests="0" file="cypress/integration/testing/actions.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Actions" timestamp="2022-01-18T14:08:39" tests="14" time="17.2770" failures="0">
-    <testcase name="Actions .type() - type into a DOM element" time="4.9790" classname=".type() - type into a DOM element"/>
-    <testcase name="Actions .focus() - focus on a DOM element" time="0.3240" classname=".focus() - focus on a DOM element"/>
-    <testcase name="Actions .blur() - blur off a DOM element" time="0.4930" classname=".blur() - blur off a DOM element"/>
-    <testcase name="Actions .clear() - clears an input or textarea element" time="0.6180" classname=".clear() - clears an input or textarea element"/>
-    <testcase name="Actions .submit() - submit a form" time="0.5240" classname=".submit() - submit a form"/>
-    <testcase name="Actions .click() - click on a DOM element" time="2.6730" classname=".click() - click on a DOM element"/>
-    <testcase name="Actions .dblclick() - double click on a DOM element" time="0.2910" classname=".dblclick() - double click on a DOM element"/>
-    <testcase name="Actions .rightclick() - right click on a DOM element" time="0.2770" classname=".rightclick() - right click on a DOM element"/>
-    <testcase name="Actions .check() - check a checkbox or radio element" time="1.0790" classname=".check() - check a checkbox or radio element"/>
-    <testcase name="Actions .uncheck() - uncheck a checkbox element" time="1.0700" classname=".uncheck() - uncheck a checkbox element"/>
-    <testcase name="Actions .select() - select an option in a &lt;select&gt; element" time="1.0290" classname=".select() - select an option in a &lt;select&gt; element"/>
-    <testcase name="Actions .scrollIntoView() - scroll an element into view" time="0.2330" classname=".scrollIntoView() - scroll an element into view"/>
-    <testcase name="Actions .trigger() - trigger an event on a DOM element" time="0.1880" classname=".trigger() - trigger an event on a DOM element"/>
-    <testcase name="Actions cy.scrollTo() - scroll the window or element to a position" time="2.1480" classname="cy.scrollTo() - scroll the window or element to a position"/>
+  <testsuite name="Root Suite" timestamp="2022-01-18T14:48:36" tests="0" file="cypress/integration/testing/actions.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Actions" timestamp="2022-01-18T14:48:36" tests="14" time="17.2960" failures="0">
+    <testcase name="Actions .type() - type into a DOM element" time="4.9400" classname=".type() - type into a DOM element"/>
+    <testcase name="Actions .focus() - focus on a DOM element" time="0.2010" classname=".focus() - focus on a DOM element"/>
+    <testcase name="Actions .blur() - blur off a DOM element" time="0.4920" classname=".blur() - blur off a DOM element"/>
+    <testcase name="Actions .clear() - clears an input or textarea element" time="0.6370" classname=".clear() - clears an input or textarea element"/>
+    <testcase name="Actions .submit() - submit a form" time="0.5370" classname=".submit() - submit a form"/>
+    <testcase name="Actions .click() - click on a DOM element" time="2.6690" classname=".click() - click on a DOM element"/>
+    <testcase name="Actions .dblclick() - double click on a DOM element" time="0.2780" classname=".dblclick() - double click on a DOM element"/>
+    <testcase name="Actions .rightclick() - right click on a DOM element" time="0.2680" classname=".rightclick() - right click on a DOM element"/>
+    <testcase name="Actions .check() - check a checkbox or radio element" time="1.1090" classname=".check() - check a checkbox or radio element"/>
+    <testcase name="Actions .uncheck() - uncheck a checkbox element" time="1.0770" classname=".uncheck() - uncheck a checkbox element"/>
+    <testcase name="Actions .select() - select an option in a &lt;select&gt; element" time="1.1020" classname=".select() - select an option in a &lt;select&gt; element"/>
+    <testcase name="Actions .scrollIntoView() - scroll an element into view" time="0.2120" classname=".scrollIntoView() - scroll an element into view"/>
+    <testcase name="Actions .trigger() - trigger an event on a DOM element" time="0.2030" classname=".trigger() - trigger an event on a DOM element"/>
+    <testcase name="Actions cy.scrollTo() - scroll the window or element to a position" time="2.2380" classname="cy.scrollTo() - scroll the window or element to a position"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-18T14:09:01" tests="0" file="cypress/integration/testing/assertions.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Assertions" timestamp="2022-01-18T14:09:01" tests="0" time="0.0000" failures="0"/>
-  <testsuite name="Implicit Assertions" timestamp="2022-01-18T14:09:01" tests="2" time="1.6290" failures="0">
-    <testcase name="Assertions Implicit Assertions .should() - make an assertion about the current subject" time="0.5280" classname=".should() - make an assertion about the current subject"/>
-    <testcase name="Assertions Implicit Assertions .and() - chain multiple assertions together" time="0.1530" classname=".and() - chain multiple assertions together"/>
+  <testsuite name="Root Suite" timestamp="2022-01-18T14:48:58" tests="0" file="cypress/integration/testing/assertions.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Assertions" timestamp="2022-01-18T14:48:58" tests="0" time="0.0000" failures="0"/>
+  <testsuite name="Implicit Assertions" timestamp="2022-01-18T14:48:58" tests="2" time="1.6410" failures="0">
+    <testcase name="Assertions Implicit Assertions .should() - make an assertion about the current subject" time="0.5700" classname=".should() - make an assertion about the current subject"/>
+    <testcase name="Assertions Implicit Assertions .and() - chain multiple assertions together" time="0.1640" classname=".and() - chain multiple assertions together"/>
   </testsuite>
-  <testsuite name="Explicit Assertions" timestamp="2022-01-18T14:09:03" tests="7" time="2.6110" failures="0">
-    <testcase name="Assertions Explicit Assertions expect - make an assertion about a specified subject" time="0.1570" classname="expect - make an assertion about a specified subject"/>
-    <testcase name="Assertions Explicit Assertions pass your own callback function to should()" time="0.1750" classname="pass your own callback function to should()"/>
-    <testcase name="Assertions Explicit Assertions finds element by class name regex" time="0.1570" classname="finds element by class name regex"/>
-    <testcase name="Assertions Explicit Assertions can throw any error" time="0.1430" classname="can throw any error"/>
-    <testcase name="Assertions Explicit Assertions matches unknown text between two elements" time="0.1490" classname="matches unknown text between two elements"/>
-    <testcase name="Assertions Explicit Assertions assert - assert shape of an object" time="0.1530" classname="assert - assert shape of an object"/>
-    <testcase name="Assertions Explicit Assertions retries the should callback until assertions pass" time="1.6340" classname="retries the should callback until assertions pass"/>
+  <testsuite name="Explicit Assertions" timestamp="2022-01-18T14:48:59" tests="7" time="2.6250" failures="0">
+    <testcase name="Assertions Explicit Assertions expect - make an assertion about a specified subject" time="0.1650" classname="expect - make an assertion about a specified subject"/>
+    <testcase name="Assertions Explicit Assertions pass your own callback function to should()" time="0.1580" classname="pass your own callback function to should()"/>
+    <testcase name="Assertions Explicit Assertions finds element by class name regex" time="0.1720" classname="finds element by class name regex"/>
+    <testcase name="Assertions Explicit Assertions can throw any error" time="0.1610" classname="can throw any error"/>
+    <testcase name="Assertions Explicit Assertions matches unknown text between two elements" time="0.1530" classname="matches unknown text between two elements"/>
+    <testcase name="Assertions Explicit Assertions assert - assert shape of an object" time="0.1420" classname="assert - assert shape of an object"/>
+    <testcase name="Assertions Explicit Assertions retries the should callback until assertions pass" time="1.6400" classname="retries the should callback until assertions pass"/>
   </testsuite>
 </testsuites>
