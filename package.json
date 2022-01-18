@@ -6,7 +6,14 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "delete:reports": "rm cypress/results/* || true",
+    "combine:reports": "jrm cypress/results/combined-report.xml \"cypress/results/*.xml\"",
+    "prereport": "npm run delete:reports",
+    "report": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/testing/*.spec.js\"",
+    "cypress:1": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/1-getting-started/*.spec.js\"",
+    "cypress:2": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/2-advanced-examples/*.spec.js\"",
+    "postreport": "npm run combine:reports"
   },
   "private": true,
   "dependencies": {
@@ -29,12 +36,14 @@
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "cypress": "^9.2.1",
+    "cypress-multi-reporters": "^1.5.0",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "mocha-junit-reporter": "^2.0.2",
     "typescript": "~4.3.5"
   }
 }
