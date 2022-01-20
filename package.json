@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "delete:reports": "rm cypress/results/* || true",
+    "delete:reports": "rm -rf cypress/results/* || true",
     "combine:reports": "jrm cypress/results/combined-report.xml \"cypress/results/*.xml\"",
     "prereport": "npm run delete:reports",
-    "report": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/testing/*.spec.js\"",
+    "report": "cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/testing/*.spec.js\"",
     "cypress:1": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/1-getting-started/*.spec.js\"",
     "cypress:2": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/2-advanced-examples/*.spec.js\"",
     "postreport": "npm run combine:reports"
@@ -25,6 +25,9 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "npm": "^8.3.1",
+    "report": "^0.1.1",
+    "run": "^1.4.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
