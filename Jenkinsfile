@@ -5,6 +5,9 @@ pipeline {
       args '--entrypoint="" -u root:root'
     }
   }
+  environment {
+        HOME = '.'
+    }
     stages {
         stage('TEST') {
             steps {
