@@ -2,8 +2,7 @@ pipeline {
   agent {
     docker {
       image 'cypress/base:10'
-      alwaysPull true
-      args '-u root'
+      args '-u root --entrypoint='' '
     }
   }
   stages {
