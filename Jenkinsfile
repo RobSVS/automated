@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'node:16.2'
+            image 'cypress/included:9.2.0'
+            args '-u root:root'
         }
     }
     stages {
