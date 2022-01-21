@@ -7,8 +7,7 @@ pipeline {
   }
   stages {
     stage('build and test') {
-      agent any
-
+        withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin'])
             steps {
                 echo 'Hello, '
 
