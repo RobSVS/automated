@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'cypress/base:10'
+      image 'node:16.2'
       args '--entrypoint=""'
     }
   }
