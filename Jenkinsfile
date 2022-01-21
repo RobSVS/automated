@@ -7,14 +7,12 @@ pipeline {
   }
   stages {
     stage('build and test') {
-        withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {
-            echo 'Hello, '
-
-            sh '''#!/bin/bash
-
-                echo "Hello from bash"
-                echo "Who I'm $SHELL"
+        steps {
+            withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {  
+            sh '''
+                echo "test"
             '''
+            }
         }
     }
   }
