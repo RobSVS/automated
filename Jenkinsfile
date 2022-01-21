@@ -8,7 +8,9 @@ pipeline {
   stages {
     stage('build and test') {
       steps {
-        sh 'echo "hello"'
+        sh '''#!/bin/bash
+                 echo "hello world" 
+         '''
       }
     }
   }
