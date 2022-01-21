@@ -12,7 +12,7 @@ pipeline {
         stage('TEST') {
             steps {
                 timeout(time: 3, unit: 'SECONDS') {
-                    ls
+                    echo "something"
                 }
             }
         }
