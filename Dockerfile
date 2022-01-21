@@ -6,5 +6,7 @@ COPY . .
 
 RUN npm -v
 RUN ls
-RUN npm install
-RUN npm run cy:test
+RUN cd node_modules
+RUN ls
+# RUN npm install
+# RUN npm run cy:test
