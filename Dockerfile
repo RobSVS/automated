@@ -1,5 +1,5 @@
 FROM node:16.13.1-alpine
 
-WORKDIR /usr/lib
+WORKDIR /usr/bin
 RUN ls
 
