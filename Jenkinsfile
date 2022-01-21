@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:16.2'
-      args '--entrypoint="npm" -u root:root'
+      args '-u root'
     }
   }
   environment {
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('TEST') {
             steps {
-                timeout(time: 3, unit: 'SECONDS') {
+                timeout(time: 5, unit: 'SECONDS') {
                     sh 'echo "something"'
                 }
             }
