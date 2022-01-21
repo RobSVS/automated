@@ -1,3 +1,5 @@
-FROM cypress/included:9.2.0
+FROM node:16.13.1-alpine
 
-RUN npm run report
+RUN npm --version
+RUN npm install
+RUN npm run cy:test
