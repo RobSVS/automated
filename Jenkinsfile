@@ -7,13 +7,7 @@ pipeline {
   }
     node {
         stage('build and test') {
-            try {
-                sh 'echo "hello"'
-            }
-            catch {
-                echo 'error'
-                throw
-            }
+            bash 'echo "hello"'
         }
     }
 }
