@@ -13,7 +13,7 @@ pipeline {
             }
             steps {
                 echo '########################################## Building #########################################'
-                sh 'node --version'
+                sh 'ls'
                 sh 'npm --version'
             }
         }
