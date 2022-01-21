@@ -5,9 +5,12 @@ pipeline {
       args '--entrypoint="" -u root:root'
     }
   }
-    node {
-        stage('build and test') {
-            bash 'echo "hello"'
+    stages {
+        stage('TEST') {
+            steps {
+                bash 'ls'
+                bash 'echo $PATH'
+            }
         }
     }
 }
