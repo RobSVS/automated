@@ -5,5 +5,5 @@ COPY . .
 
 RUN npm -v
 RUN ls
-RUN touch file.txt
-RUN ls
+RUN npm install
+RUN npm run cy:test
