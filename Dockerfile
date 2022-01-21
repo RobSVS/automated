@@ -1,5 +1,5 @@
 FROM node:16.13.1-alpine
 
-WORKDIR /var
+WORKDIR /var/lib/docker/volumes
 RUN ls
 
