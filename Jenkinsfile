@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('build and test') {
         steps {
-            withEnv(['PATH+EXTRA=/usr/sbin:/usr/bin:/sbin:/bin']) {  
+            withEnv(['PATH+EXTRA=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin']) {  
             sh '''
                 echo "test"
             '''
