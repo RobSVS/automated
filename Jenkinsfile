@@ -7,11 +7,17 @@ pipeline {
   }
   stages {
     stage('build and test') {
-      steps {
-        sh '''#!/bin/bash
-                 echo "hello world" 
-         '''
-      }
+      agent any
+
+            steps {
+                echo 'Hello, '
+
+                sh '''#!/bin/bash
+
+                    echo "Hello from bash"
+                    echo "Who I'm $SHELL"
+                '''
+            }
     }
   }
 }
