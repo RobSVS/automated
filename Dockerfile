@@ -1,3 +1,3 @@
-FROM node:16.13.1-alpine
+FROM cypress/included:9.2.0
 
-RUN npm --version
+RUN npm run report
