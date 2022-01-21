@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm -v
 RUN ls
-WORKDIR "/node_modules"
-RUN ls
-# RUN npm install
-# RUN npm run cy:test
+RUN npm install --save-dev mocha mochawesome mochawesome-merge mochawesome-report-generator
+
+RUN npm install
+RUN npm run cy:test
