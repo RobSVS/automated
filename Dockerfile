@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm -v
 RUN ls
-RUN npm install --save-dev mocha mochawesome mochawesome-merge mochawesome-report-generator
-
 RUN npm install
-RUN npm run cy:test
+RUN npm run report
+WORKDIR /cypress/results
+RUN ls
