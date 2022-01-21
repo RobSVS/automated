@@ -11,11 +11,6 @@ pipeline {
     stages {
         stage('TEST') {
             steps {
-                node {
-                    timeout(time: 3, unit: 'SECONDS') {
-                        sh 'echo "something"'
-                    }
-                }
                 timeout(time: 3, unit: 'SECONDS') {
                     sh 'echo "something"'
                 }
