@@ -9,7 +9,8 @@ pipeline {
         stage('build and test') {
             try {
                 sh 'echo "hello"'
-            } catch {
+            }
+            catch {
                 echo 'error'
                 throw
             }
