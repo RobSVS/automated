@@ -10,10 +10,10 @@ pipeline {
   }
   stages {
     stage('build and test') {
-        steps {
-            sh '''
-                echo "test"
-            '''
+        node {
+            sleep 10
+            echo 'Hello'
+            sh 'echo "hello2"'
         }
     }
   }
