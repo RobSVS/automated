@@ -6,3 +6,4 @@ COPY . .
 RUN npm -v
 RUN ls
 RUN touch file.txt
+RUN ls
