@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm -v
 RUN ls
-RUN npm install
-RUN npm run report
-WORKDIR /cypress/results
+WORKDIR /cypress
 RUN ls
+# RUN npm install
+# RUN npm run report
