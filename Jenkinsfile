@@ -1,21 +1,15 @@
 pipeline {
-    agent none
-    options {
-        skipDefaultCheckout true
+  agent {
+    docker {
+      image 'cypress/base:10'
+      args '-u root:root'
     }
-    stages {
-        stage('test pipeline') {
-            agent {
-                docker {
-                    image 'node:16.2'
-                    args '-u root:root'
-                }
-            }
-            steps {
-                echo '########################################## Building #########################################'
-                sh 'ls'
-                sh 'npm --version'
-            }
-        }
+  }
+  stages {
+    stage('build and test') {
+      steps {
+        sh 'npm --version'
+      }
     }
+  }
 }
