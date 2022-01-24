@@ -4,9 +4,8 @@ FROM cypress/base:latest
 WORKDIR /app
 COPY . .
 
-RUN cypress install
-
 RUN npm install
+RUN cypress install
 RUN npm cypress run
 
 # WORKDIR /app/cypress/results
