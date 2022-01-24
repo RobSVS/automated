@@ -1,5 +1,5 @@
 # FROM node:16.2
-FROM FROM cypress/base:latest
+FROM FROM cypress/base
 
 
 WORKDIR /app
