@@ -6,7 +6,7 @@ VOLUME ${PWD}:/usr/src/app
 RUN npm -v
 RUN ls
 RUN touch test.txt
-WORKDIR /usr
+WORKDIR /var
 RUN ls
-WORKDIR /usr/src
+WORKDIR /var/lib
 RUN ls
