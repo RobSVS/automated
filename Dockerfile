@@ -6,9 +6,10 @@ COPY . .
 
 RUN npm -v
 RUN ls
+RUN touch test.txt
 
-RUN npm install
-RUN npm run report
+# RUN npm install
+# RUN npm run report
 
-WORKDIR /app/cypress/results
-RUN ls
+# WORKDIR /app/cypress/results
+# RUN ls
