@@ -5,3 +5,4 @@ WORKDIR /app
 RUN npm -v
 RUN ls
 RUN touch test.txt
+RUN ls
