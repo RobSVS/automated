@@ -5,9 +5,9 @@ VOLUME /var/run/docker.sock
 RUN npm -v
 RUN ls
 RUN touch test.txt
-WORKDIR /usr
+WORKDIR /usr/src
 RUN ls
-WORKDIR /bin
+WORKDIR /usr/bin
 RUN ls
-WORKDIR /dev
+WORKDIR /usr/lib
 RUN ls
