@@ -3,5 +3,6 @@ FROM cypress/included:9.2.0
 
 RUN npm -v
 RUN ls
-RUN touch test2.txt
+RUN touch test.txt
+WORKDIR /var
 RUN ls
