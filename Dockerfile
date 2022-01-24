@@ -8,7 +8,7 @@ ENV CYPRESS_CACHE_FOLDER = ~/cypress/cypress_cache
 
 RUN npm install
 RUN cypress install
-RUN npm run cy:test
+RUN npm run report
 
 # WORKDIR /app/cypress/results
 # RUN ls
