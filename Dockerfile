@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY . .
 
-# RUN npm install
+RUN npm install
 RUN npm run cy:test
 
 WORKDIR /app/cypress/results
