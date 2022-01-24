@@ -3,7 +3,6 @@ FROM cypress/base:10
 
 WORKDIR /app
 
-RUN npm ci
 RUN $(npm bin)/cypress verify
 
 COPY . .
