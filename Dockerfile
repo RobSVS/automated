@@ -3,4 +3,3 @@ FROM node:16.2
 
 RUN npm -v
 RUN ls
-RUN npm run report
