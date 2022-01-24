@@ -4,12 +4,8 @@ FROM cypress/included:9.2.0
 WORKDIR /app
 COPY . .
 
-RUN npm -v
+RUN npm install
+RUN npm run report
+
+WORKDIR /app/cypress/results
 RUN ls
-RUN touch test.txt
-
-# RUN npm install
-# RUN npm run report
-
-# WORKDIR /app/cypress/results
-# RUN ls
