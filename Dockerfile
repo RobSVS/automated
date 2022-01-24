@@ -4,9 +4,10 @@ FROM cypress/base:latest
 WORKDIR /app
 COPY . .
 
+CYPRESS_CACHE_FOLDER = ~/cypress/cypress_cache
+
 RUN npm install
-RUN cypress install
-RUN npm cypress run
+RUN npm run cy:test
 
 # WORKDIR /app/cypress/results
 # RUN ls
