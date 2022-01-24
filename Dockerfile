@@ -5,12 +5,17 @@ RUN ls
 WORKDIR ~/.cache
 RUN ls
 
-# WORKDIR /app
-# COPY . .
+WORKDIR /app
+COPY . .
 
-# ENV CYPRESS_CACHE_FOLDER = ~/.cache/Cypress
+ENV CYPRESS_CACHE_FOLDER = ~/.cache/Cypress
 
-# RUN npm install
+RUN npm install
+
+RUN ls
+WORKDIR ~/.cache
+RUN ls
+
 # RUN cypress install
 # RUN npm run report
 
