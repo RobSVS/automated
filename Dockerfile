@@ -3,12 +3,10 @@ FROM cypress/base:10
 
 WORKDIR /app
 
-RUN $(npm bin)/cypress verify
-
 COPY . .
 
-RUN npm install
-RUN npm run report
+# RUN npm install
+RUN npm run cy:test
 
 WORKDIR /app/cypress/results
 RUN ls
