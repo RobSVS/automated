@@ -2,7 +2,7 @@
 FROM cypress/included:9.3.1
 
 RUN ls
-WORKDIR /.cache
+WORKDIR ~/.cache
 RUN ls
 
 # WORKDIR /app
