@@ -3,5 +3,6 @@ FROM node:16.2
 
 RUN npm -v
 RUN ls
+WORKDIR /app
 RUN touch test.txt
 RUN ls
