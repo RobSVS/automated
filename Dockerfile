@@ -6,7 +6,7 @@ COPY . .
 
 RUN cypress install
 RUN npm install
-RUN npm run cy:test
+RUN npm cypress run
 
-WORKDIR /app/cypress/results
-RUN ls
+# WORKDIR /app/cypress/results
+# RUN ls
