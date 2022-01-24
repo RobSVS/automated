@@ -1,5 +1,5 @@
-FROM sitespeedio/node:ubuntu-20.04-nodejs-16.3.0
-# FROM cypress/base:10
+# FROM node:16.2
+FROM FROM cypress/base:latest
 
 
 WORKDIR /app
