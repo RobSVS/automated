@@ -4,6 +4,7 @@
     "reportDir": "cypress/results",
     "overwrite": false,
     "html": false,
-    "json": true
+    "json": true,
+    "inline": true
   }
 }

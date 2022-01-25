@@ -10,10 +10,10 @@
     "delete:reports": "rm -rf mochawesome-report/** || true && rm -rf cypress/results/* || true",
     "combine:reports": "jrm cypress/results/combined-report.xml \"cypress/results/*.xml\"",
     "prereport": "npm run delete:reports",
-    "report": "cypress run --config video=false --reporter ./node_modules/mochawesome --reporter-options reportDir=\"cypress/results\",overwrite=false,html=false,json=true --spec \"cypress/integration/testing/*.spec.js\"",
+    "report": "cypress run --config video=false --reporter ./node_modules/mochawesome --reporter-options reportDir=\"cypress/results\",inline=true,overwrite=false,html=false,json=true --spec \"cypress/integration/testing/*.spec.js\"",
     "cypress:1": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/1-getting-started/*.spec.js\"",
     "cypress:2": "npx cypress run --config video=false --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json --spec \"cypress/integration/2-advanced-examples/*.spec.js\"",
-    "postreport": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "postreport": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && npx marge -i mochawesome.json",
     "cy:test": "npx cypress run --config video=false --spec \"cypress/integration/*/todo.spec.js\""
   },
   "private": true,
