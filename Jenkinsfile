@@ -6,8 +6,12 @@ pipeline {
             alwaysPull false
             reuseNode true
         }
+    }
+    stages {
+        stage('test') {
+            steps {
+                sh 'echo "testing"'
+            }
         }
-        steps {
-        sh 'echo "testing"'
-        }
+    }
 }
