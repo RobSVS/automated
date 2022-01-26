@@ -3,7 +3,7 @@ node {
 
     def customImage = docker.build("my-image:${env.BUILD_ID}")
 
-    customImage.inside {
+    customImage.inside("--entrypoint=''") {
         sh 'echo "test"'
     }
 }
