@@ -1,9 +1,11 @@
-node {
-    checkout scm
-
-    def customImage = docker.build("my-image:${env.BUILD_ID}")
-
-    customImage.inside("--entrypoint=''") {
-        sh 'echo "test"'
-    }
+agent {
+  docker {
+    image "node:16.2"
+    args "-u root"
+    alwaysPull false
+    reuseNode true
+  }
+}
+steps {
+  sh 'echo "testing"'
 }
