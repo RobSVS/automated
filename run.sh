@@ -1,4 +1,10 @@
 #!/bin/sh
+set e+x
+
+LOCAL_NAME=automated
+
+echo "Building $LOCAL_NAME"
+
 # set -f
 # LOCAL_NAME=automated
 
