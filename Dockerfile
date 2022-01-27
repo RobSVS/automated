@@ -15,9 +15,9 @@ ARG GROUP_ID
 # if you want to see all existing groups uncomment the next command
 # RUN cat /etc/group
 
-RUN groupadd -f -g ${GROUP_ID} appuser
+RUN groupadd -o -g ${GROUP_ID} appuser
 # do not log creating new user, otherwise there could be a lot of messages
-RUN useradd -r --no-log-init -u ${USER_ID} -g appuser appuser
+RUN useradd -o -r --no-log-init -u ${USER_ID} -g appuser appuser
 RUN install -d -m 0755 -o appuser -g appuser /home/appuser
 
 # move test runner binary folder to the non-root's user home directory
