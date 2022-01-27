@@ -10,13 +10,12 @@ RUN id
 # we are going to recreate this user and give it _same id_ as external user
 # that is going to run this container.
 ARG USER_ID
-# ARG GROUP_ID
-ENV GROUP_ID = 999
+ARG GROUP_ID
 
 # if you want to see all existing groups uncomment the next command
-RUN cat /etc/group
+# RUN cat /etc/group
 
-RUN groupadd -g ${GROUP_ID} appuser
+# RUN groupadd -g ${GROUP_ID} appuser
 # do not log creating new user, otherwise there could be a lot of messages
 RUN useradd -r --no-log-init -u ${USER_ID} -g appuser appuser
 RUN install -d -m 0755 -o appuser -g appuser /home/appuser
