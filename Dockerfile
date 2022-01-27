@@ -10,7 +10,8 @@ RUN id
 # we are going to recreate this user and give it _same id_ as external user
 # that is going to run this container.
 ARG USER_ID
-ARG GROUP_ID
+# ARG GROUP_ID
+GROUP_ID = 999
 
 # if you want to see all existing groups uncomment the next command
 RUN cat /etc/group
