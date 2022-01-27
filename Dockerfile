@@ -13,7 +13,7 @@ ARG USER_ID
 ARG GROUP_ID
 
 # if you want to see all existing groups uncomment the next command
-# RUN cat /etc/group
+RUN cat /etc/group
 
 RUN groupadd -g ${GROUP_ID} appuser
 # do not log creating new user, otherwise there could be a lot of messages
