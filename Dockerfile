@@ -1,40 +1,14 @@
-FROM cypress/included:8.3.0
+# FROM node:16.2
+FROM cypress/included:9.2.0
 
-# "root"
-RUN whoami
-# uid=0(root) gid=0(root) groups=0(root)
-# meaning root
-RUN id
+WORKDIR /app
+COPY . .
 
-# there is a built-in user "node" that comes from the very base Docker Node image
-# we are going to recreate this user and give it _same id_ as external user
-# that is going to run this container.
-ARG USER_ID
-ARG GROUP_ID
+# RUN npm -v
+# RUN ls
 
-# if you want to see all existing groups uncomment the next command
-# RUN cat /etc/group
+RUN npm install
+RUN npm run report
 
-RUN groupadd -o -g ${GROUP_ID} appuser
-# do not log creating new user, otherwise there could be a lot of messages
-RUN useradd -o -r --no-log-init -u ${USER_ID} -g appuser appuser
-RUN install -d -m 0755 -o appuser -g appuser /home/appuser
-
-# move test runner binary folder to the non-root's user home directory
-RUN mv /root/.cache /home/appuser/.cache
-# make sure cypress looks in the right place
-ENV CYPRESS_CACHE_FOLDER=/home/appuser/.cache/Cypress
-
-WORKDIR /test
-COPY package.json .
-COPY package-lock.json .
-COPY cypress.json .
-RUN npm ci --production
-RUN chown -R appuser /test
-USER appuser
-
-# show user effective id and group - it should be non-zero
-# meaning the current user is not root
-RUN id
-
-ENV TZ=Europe/Stockholm
+# WORKDIR /app/cypress/results
+# RUN ls
